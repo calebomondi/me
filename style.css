@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed|Philosopher|Baloo+2);
+
+body {
+    background-image: url('images/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collapse {
+    display: flex;
+    justify-content: end;
+}
+.nav-link {
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 20px;
+}
+.nav-link:hover {
+    color: black;
+}
+.topBar {
+    box-shadow: 0 1px 5px gray;
+    height: 80px;
+    background-color: teal;
+}
+.navbar {
+    box-shadow: 0 1px 5px gray;
+    box-sizing: border-box;
+    background-color: teal;
+    border-radius: 0 0 15px 15px;
+}
+#logo {
+    width: 75px;
+    border-radius: 50%;
+    margin: 3px;
+}
+.navbar-brand {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+/*Align name with logo*/
+#myName {
+    display: inline;
+}
+
+/*line below links*/
+a.custom-nav-link {
+    position: relative;
+}
+a.custom-nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+a.custom-nav-link:hover::after {
+    opacity: 1;
+}
+
+/*content divs*/
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.desc, .mimi {
+    display: inline-block;
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mimi {
+    background-image: url('images/bg.png');
+    background-position: center;
+}
+.mimi img {
+    width: 60%;
+    border-radius: 50px 10px 50px 10px;
+    border: 4px dashed teal;
+}
+p.intro {
+    font-family: 'Philosopher';
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 50px;
+}
+p.descri {
+    font-family: 'Baloo 2';
+    font-size: x-large;
+    font-weight: bolder;
+}
+.jina {
+    color: orangered;
+}
+.field {
+    color: crimson;
+}
+p.about a{
+    border-radius: 15px;
+    background-color: teal;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 15px;
+}
+p.about a:hover {
+    box-shadow: 0 1px 5px gray;
+}
+p.findMe a {
+    text-decoration: none;
+    font-size: 40px;
+    margin: 5px;
+    color: black;
+}
+p.findMe a.in:hover {
+    color: blue;
+}
+p.findMe a.git:hover {
+    color: red;
+}
+p.findMe a.x:hover {
+    color: teal;
+}
+p.findMe a.ig:hover {
+    color: purple;
+}
+
+/*-------about.nhtml--------*/
+p.who {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.aboutme {
+    font-size: 20px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid crimson;
+}
+.bold {
+    color: teal;
+}
+/*---------projects.html-----------*/
+.skills, .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill {
+    width: 20%;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 0 1px 5px gray;
+    margin: 10px;
+}
+.skill:hover {
+    box-shadow: 0 1px 5px teal;
+}
+.skill img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    padding: 5px;
+}
+.skill p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 1px 5px gray;
+    box-sizing: border-box;
+    margin: 5px;
+}
+.ddesc, .dimage {
+    width: 50%;   
+    margin: 10px;
+}
+.dimage img{
+    width: 100%;
+    border-radius: 2%;
+}
+.dimage img:hover {
+    box-shadow: 0 1px 5px teal;
+}
+.proTitle {
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 30px;
+}
+.proDesc {
+    font-size: 17px;
+}
+.line {
+    height: 1px;
+    color: teal;
+}
+.from-up {
+    margin-top: 130px;
+}
+.from-up2 {
+    margin-top: 50px;
+}
+
+/*responsivness*/
+@media screen and (min-width:575px) and (max-width:992px) {
+    .project {
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .ddesc, .dimage {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .ddesc {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px;
+    }
+    .dimage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        background-image: url('images/back3.jpg');
+    }
+}
+@media screen and (min-width:499px) and (max-width:575px) {
+    .skill {
+        width: 25%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .desc,.mimi {
+        width: 70%;
+    }
+    .mimi img{
+        width: 80%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .desc,.mimi {
+        width: 80%;
+    }
+    .mimi img{
+        width: 90%;
+    }
+}
+@media screen and (max-width:395px) {
+    .skill {
+        width: 40%;
+    }
+}
+@media screen and (max-width:300px) {
+    .desc {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:575px){
+    body {
+        background-image: url('images/back3.jpg');
+    }
+    .collapse {
+        justify-content: start;
+    }
+    .content {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .desc, .mimi {
+        width: 100%;
+    }
+    .mimi img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 70%;
+    }
+    .mimi {
+        height: 50vh;
+    }
+    .myDesc {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p.findMe, p.about, p.intro, p.descri {
+        text-align: center;
+    }
+    .project {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .proTitle {
+        text-align: center;
+    }
+    .ddesc, .dimage {
+        width: 100%;
+    }
+    .ddesc {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px;
+    }
+    .dimage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
