@@ -20,11 +20,7 @@ body {
 .nav-link:hover {
     color: black;
 }
-.topBar {
-    box-shadow: 0 1px 5px gray;
-    height: 80px;
-    background-color: teal;
-}
+
 .navbar {
     box-shadow: 0 1px 5px gray;
     box-sizing: border-box;
@@ -32,7 +28,7 @@ body {
     border-radius: 0 0 15px 15px;
 }
 #logo {
-    width: 75px;
+    width: 50px;
     border-radius: 50%;
     margin: 3px;
 }
@@ -147,6 +143,7 @@ p.who {
     border-radius: 20px;
     border-top: 2px solid orangered;
     border-bottom: 2px solid crimson;
+    margin-bottom: 30px;
 }
 .bold {
     color: teal;
@@ -160,6 +157,7 @@ p.who {
     box-sizing: border-box;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: -15px;
 }
 .skill {
     width: 20%;
@@ -203,7 +201,7 @@ p.who {
     border-radius: 2%;
 }
 .dimage img:hover {
-    box-shadow: 0 1px 5px teal;
+    box-shadow: 0 7px 15px teal;
 }
 .proTitle {
     font-family: 'Asap Condensed', sans-serif;
@@ -217,11 +215,20 @@ p.who {
     color: teal;
 }
 .from-up {
-    margin-top: 130px;
+    margin-top: 0;
 }
 .from-up2 {
-    margin-top: 50px;
+    margin-top: 20px;
 }
+.clickme {
+    font-size: 15px;
+    display: none;
+    text-align: center;
+    font-style: italic;
+    color: teal;
+    line-height: 1px;
+}
+
 
 /*responsivness*/
 @media screen and (min-width:575px) and (max-width:992px) {
@@ -280,6 +287,9 @@ p.who {
     }
 }
 @media screen and (max-width:575px){
+    .clickme {
+        display: block;
+    }
     body {
         background-image: url('images/back3.jpg');
     }
