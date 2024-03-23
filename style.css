@@ -198,10 +198,12 @@ p.who {
 }
 .dimage img{
     width: 100%;
+    height: 100%;
     border-radius: 2%;
 }
 .dimage img:hover {
-    box-shadow: 0 7px 15px teal;
+    width: 102%;
+    height: 102%;
 }
 .proTitle {
     font-family: 'Asap Condensed', sans-serif;
